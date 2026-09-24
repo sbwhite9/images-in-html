@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <title>Images in HTML</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TO DO: Add your name to the meta author tag -->
-        <meta name="author" content="">
+        <meta name="author" content="Sasha White">
         <meta name="description" content="Practice with images, video, svgs, and iframes for G.I.T. 598">
 
         <!-- GOOGLE FONTS LINKS -->
@@ -80,8 +79,7 @@
                         </code>
                     </pre>
 
-                    <!-- TO DO: Add the decorative square-red-blue image below. Be sure to include the height and width -->
-
+                    <img src="images/square-red-blue.jpg" alt="" width="400" height="400">
                     <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
 
@@ -96,7 +94,7 @@
                         </code>
                     </pre>
 
-                    <!-- TO DO: Add the Memphis Recording Service Image Here. Be sure to include the height and width, and some alt text. I used "neon sign in white and red that says Memphis recording service" -->
+                     <img src="images/memphis-recording-service.jpg" alt="neon sign in white and red that says Memphis recording service" width="400" height="400">
 
                     <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
@@ -122,8 +120,27 @@
                 <p>There are a few ways that you can add an SVG to your page with HTML, and today we'll practice pasting their code directly into our HTML. You can also use a link to the file as the <code>src</code> for an image tag, but pasting the code allows us to do more with CSS later. Vector images are best for graphics, because they are defined with math, and will display perfectly at any size, which saves time when they load on the page.</p>
                 <p>We are going to paste SVG icons for Facebook, Instagram, and YouTube into the footer below to practice this. Notice that I have added an <code>aria-label</code> attribute to the links wrapped around those icons. It is used when there isn't any link text, like when you wrap a link around the image.</p>
 
-                <!-- TO DO: Add the home SVG from the Tabler Icons website inside of this link -->
+            
                 <a href="#" aria-label="Go to the home page">
+                    <!--category: Buildings
+                    tags: [house, dashboard, living, building]
+                    version: "1.1" unicode: "eac0"-->
+                <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                 viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                 <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M10 12h4v4h-4z" />
+                </svg>
+
                     
                 </a>
             </section>
@@ -134,18 +151,78 @@
             <section>
                 <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
 
-                <!-- TO DO: Add the Facebook icon from the tabler icons website inside of this link -->
+            
                 <a href="#" aria-label="find us on Facebook">
+                <!--
+version: "2.9"
+unicode: "f7e6"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+>
+  <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
+</svg>
+
+
                     
                 </a>
                 
-                <!-- TO DO: Add the Instagram icon from the tabler icons website inside of this link -->
+                
                 <a href="#" aria-label="find us on Instagram">
+                <!--
+tags: [logo, app, application, images, photos, videos, post, stories, online, community]
+category: Brand
+version: "1.9"
+unicode: "ec20"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+  <path d="M16.5 7.5l0 .01" />
+</svg>
+
+
                     
                 </a>
 
-                <!-- TO DO: Add the YouTube icon from the tabler icons website inside of this link -->
+                
                 <a href="#" aria-label="find us on YouTube">
+                <!--
+tags: [logo, platform, channel, film, video, youtuber, maker, comments, stream, streamer]
+category: Brand
+version: "1.15"
+unicode: "ec90"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+  <path d="M10 9l5 3l-5 3z" />
+</svg>
+
+
                     
                 </a>
             </section>
